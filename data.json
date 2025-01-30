@@ -1,0 +1,8 @@
+{ "city": "Metropolis", 
+"country": "Fictionland", 
+"forecast": [{ "day": "Monday", "temperature": 24, "conditions": "Sunny" }, 
+    { "day": "Tuesday", "temperature": 19, "conditions": "Cloudy" },    
+    { "day": "Wednesday", "temperature": 22, "conditions": "Rainy" }, 
+    { "day": "Thursday", "temperature": 18, "conditions": "Stormy" }, 
+    { "day": "Friday", "temperature": 26, "conditions": "Sunny" } ] 
+}
