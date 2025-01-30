@@ -1,7 +1,7 @@
 
 //fetching data
 
-let weatherData = function(){
+const weatherData = function(){
 return fetch('data.json').then(response => {
 if(!response) throw new Error(err) (`${err.msg}`)
 return response.json()});
@@ -31,8 +31,8 @@ weatherData()
 
 //Highest temp day 
 weatherData().then(data => {let temp = data.forecast.map(day => day.temperature);
-    let highestTemp = temp.reduce((max, day) => max>day ? max : day, temp[0])
-    let highestTempDay = data.forecast.find(day => day.temperature === highestTemp)
+    const highestTemp = temp.reduce((max, day) => max>day ? max : day, temp[0])
+    const highestTempDay = data.forecast.find(day => day.temperature === highestTemp)
     console.log(`The warmest day is ${highestTempDay.day} with a temperature of ${highestTempDay.temperature}C`);
 })
 
